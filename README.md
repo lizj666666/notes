@@ -1,10 +1,9 @@
 # notes
-日常积累
 
-# 箭头函数
+### 箭头函数
 箭头函数能保存函数创建时的 this值，而不是调用时的值
 
-# 构造函数
+### 构造函数
 ``` typescript  constructor->构造函数
 class Greeter {
     greeting: string;
