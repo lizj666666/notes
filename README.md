@@ -18,7 +18,7 @@ class Greeter {
 let greeter = new Greeter("world");
 
 ```
-使用 new构造了 Greeter类的一个实例。 它会调用之前定义的构造函数，创建一个 Greeter类型的新对象，并执行构造函数初始化它
+* 使用 new构造了 Greeter类的一个实例。 它会调用之前定义的构造函数，创建一个 Greeter类型的新对象，并执行构造函数初始化它
 
 ```
 class Animal {
@@ -37,5 +37,5 @@ class Snake extends Animal {
     }
 }
 ```
-> 派生类包含了一个构造函数，它 必须调用 super(),它会执行基类的构造函数
-> 在构造函数里访问 this的属性之前，我们 一定要调用 super()。 这个是TypeScript强制执行的一条重要规则。
+* 派生类包含了一个构造函数，它 必须调用 super(),它会执行基类的构造函数
+* 在构造函数里访问 this的属性之前，我们 一定要调用 super()。 这个是TypeScript强制执行的一条重要规则。
