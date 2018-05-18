@@ -39,3 +39,16 @@ class Snake extends Animal {
 ```
 * 派生类包含了一个构造函数，它 必须调用 super(),它会执行基类的构造函数
 * 在构造函数里访问 this的属性之前，我们 一定要调用 super()。 这个是TypeScript强制执行的一条重要规则。
+
+```
+class Octopus {
+    readonly name: string;
+    readonly numberOfLegs: number = 8;
+    constructor (theName: string) {
+        this.name = theName;
+    }
+}
+let dad = new Octopus("Man with the 8 strong legs");
+dad.name = "Man with the 3-piece suit"; // 错误! name 是只读的.
+```
+* 使用 readonly关键字将属性设置为只读的。 只读属性必须在声明时或构造函数里被初始化。
