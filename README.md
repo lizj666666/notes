@@ -52,3 +52,12 @@ let dad = new Octopus("Man with the 8 strong legs");
 dad.name = "Man with the 3-piece suit"; // 错误! name 是只读的.
 ```
 * 使用 readonly关键字将属性设置为只读的。 只读属性必须在声明时或构造函数里被初始化。
+### 数组 对象属性去重  reduce
+``` 
+    let arr = [{id:1,name:'a'},{id:1,name:'b'},{id:2,name:'c'},{id:3,name:'d'}],obj={};
+    arr = arr.reduce((item,next)=>{
+        obj[next.id] ? '':obj[next.id] = true && item.push(next);
+        return item;
+    });
+
+```
