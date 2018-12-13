@@ -65,3 +65,12 @@ dad.name = "Man with the 3-piece suit"; // 错误! name 是只读的.
 * 响应式: 例如如何监听数据变化,其中的实现方法就是我们提到的双向绑定
 * 模板引擎: 如何解析模板
 * 渲染: Vue如何将监听到的数据变化和解析后的HTML进行渲染
+
+
+## video.js  切换src问题
+```
+        
+   player.src(val);
+   //加上延时加载load 可以暂时解决 间隔切换 无法 loadedmetadata 
+   setTimeout(()=>{player.load();},100); 
+```
